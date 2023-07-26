@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header{
@@ -36,21 +36,66 @@ a {
     flex: 1;
 }
 
+.content .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+
+    
+}
+
+.boxes > * {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #3882F6;
+}
+
 .content .third {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     color: white;
+
 }
+
+.content .middle {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
 
 .blue-box {
     background-color: #3882F6;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    
 }
 
-.button-box {
-    
+.blue-box button {
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
 }
 
 .footer {
